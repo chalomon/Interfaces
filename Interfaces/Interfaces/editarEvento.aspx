@@ -7,17 +7,17 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form10" runat="server">
     <div style="height: 132px; width: 100%; border-style: solid;">
     
     </div>
     
     <div>
-    <a href="">Inicio</a>
+    <a href="home.aspx">Inicio</a>
      | 
-     <a href="">Log-In</a>
+     <a href="home.aspx">Log-In</a>
       | 
-      <a href="">Registro</a>
+      <a href="regPerfil.aspx">Registro</a>
        | 
        <a href="">Contacto</a>
     </div>
@@ -30,7 +30,7 @@
             <asp:Label ID="lblEFecha" runat="server" Text="Fecha y hora"></asp:Label><br />
             <asp:TextBox ID="txtEFecha" runat="server" Width="255px"></asp:TextBox><br />
             <asp:TextBox ID="txtEHora" runat="server" Width="67px"></asp:TextBox>
-            <asp:Label ID="Label2" runat="server" Text=" : "></asp:Label>
+            <asp:Label ID="Label22" runat="server" Text=" : "></asp:Label>
             <asp:TextBox ID="txtEMin" runat="server" Width="64px"></asp:TextBox><br />
             <br />
             <asp:Label ID="lblEDir" runat="server" Text="Dirección del evento"></asp:Label><br />
@@ -38,11 +38,11 @@
             <br />
             <asp:CheckBox ID="chkEMin" runat="server" Text="Edad mínima" />
             <asp:TextBox ID="TextBox9" runat="server" style="margin-left: 3px" Width="74px"></asp:TextBox>
-            <asp:Label ID="Label8" runat="server" Text="   años"></asp:Label>
+            <asp:Label ID="Label88" runat="server" Text="   años"></asp:Label>
             <br />
             <asp:CheckBox ID="chkEMax" runat="server" Text="Edad máxima" />
             <asp:TextBox ID="TextBox10" runat="server" Width="71px"></asp:TextBox>
-            <asp:Label ID="Label9" runat="server" Text="   años"></asp:Label>
+            <asp:Label ID="Label99" runat="server" Text="   años"></asp:Label>
             <br />
             <br />
             <asp:Label ID="lblECat" runat="server" Text="Categoría"></asp:Label><br />

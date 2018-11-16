@@ -7,12 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Interfaces.Interfaces
 {
-    public partial class regPerfil : System.Web.UI.Page
+    public partial class regPerfilE : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
     }
-        
 }
