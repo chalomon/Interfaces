@@ -43,7 +43,7 @@
         </div>
         <br /><br /><br /><br /><br /><br />
 
-        <a href="regPerfil.aspx" style="margin-left: 20px;">¿No tienes una cuenta? ¿Qué esperas? Regístrate</a>
+        <a href="regPerfil.aspx" style="margin-left: 20px;">¿No tienes una cuenta? <b>¿Qué esperas?</b> Regístrate </a>
     
     </div>
     </form>
