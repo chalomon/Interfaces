@@ -13,9 +13,9 @@
     </div>
     
     <div>
-    <a href"">Inicio</a>
+    <a href= "home.aspx">Inicio</a>
      | 
-     <a href="">Log-In</a>
+     <a href="home.aspx">Log-In</a>
       | 
       <a href="regPerfil.aspx">Registro</a>
        | 
@@ -37,9 +37,12 @@
     <h3 style="margin-left: 20px;">Contraseña: 
         <a style="margin-left: 60px;"><asp:TextBox ID="txtPass" runat="server" 
             TextMode="Password" Width="267px"></asp:TextBox></a>
-        </h3><br /><br />
+        </h3>
+        <asp:Label ID="lblUsuario1" runat="server"></asp:Label>
+        <br /><br />
         <div style="margin-left: 33%;">
-            <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" />
+            <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" 
+                onclick="btnIngresar_Click" />
         </div>
         <br /><br /><br /><br /><br /><br />
 

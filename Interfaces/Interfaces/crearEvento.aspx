@@ -13,11 +13,11 @@
     </div>
     
     <div>
-    <a href="">Inicio</a>
+    <a href="home.aspx">Inicio</a>
      | 
-     <a href="">Log-In</a>
+     <a href="home.aspx">Log-In</a>
       | 
-      <a href="">Registro</a>
+      <a href="regPerfil.aspx">Registro</a>
        | 
        <a href="">Contacto</a>
     </div>
@@ -37,9 +37,9 @@
             <asp:TextBox ID="txtNDir" runat="server" Width="255px"></asp:TextBox><br />
             <br />
             <asp:CheckBox ID="chkNMin" runat="server" 
-                oncheckedchanged="CheckBox1_CheckedChanged" Text="Edad mínima" />
+                Text="Edad mínima" />
             <asp:TextBox ID="txtMin" runat="server" style="margin-left: 3px" Width="74px" 
-                ontextchanged="TextBox9_TextChanged"></asp:TextBox>
+                ></asp:TextBox>
             <asp:Label ID="Label8" runat="server" Text="   años"></asp:Label>
             <br />
             <asp:CheckBox ID="chkNMax" runat="server" Text="Edad máxima" />
@@ -55,7 +55,7 @@
         <div style="width: 40%; height: 295px; float: left; margin-left: 30px;">
         Sube una foto<br />
         <div style="border-style: solid; height: 70%"></div><br />
-            <asp:Button ID="btnNSel" runat="server" Text="Sel. archivo" />
+            <asp:FileUpload ID="FileUpload1" runat="server" />
         </div>
 
         <div style="float: left; width: 85%; margin: auto auto auto 29px; height: 294px;">
@@ -76,7 +76,8 @@
             <br />
             <asp:Label ID="lblNDes" runat="server" Text="Descripción del evento"></asp:Label>
             <br />
-            <asp:TextBox ID="txtNDes" runat="server" Height="148px" Width="649px"></asp:TextBox><br />
+            <asp:TextBox ID="txtNDes" runat="server" Height="148px" Width="649px" 
+                TextMode="MultiLine"></asp:TextBox><br />
 
 
 

@@ -9,6 +9,10 @@ namespace Interfaces.Interfaces
 {
     public partial class regPerfil : System.Web.UI.Page
     {
-        
+
+        protected void Page_Load1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

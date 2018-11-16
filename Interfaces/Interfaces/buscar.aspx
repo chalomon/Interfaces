@@ -13,9 +13,9 @@
     </div>
     
     <div>
-    <a href="">Inicio</a>
+    <a href="home.aspx">Inicio</a>
      | 
-     <a href="">Log-In</a>
+     <a href="home.aspx">Log-In</a>
       | 
       <a href="regPerfil.aspx">Registro</a>
        | 

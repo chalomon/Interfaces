@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClasses1">
+  <DataContextMoniker Name="/DataClasses1DataContext" />
+  <nestedChildShapes>
+    <classShape Id="6375e87d-6a0a-4755-ac6e-394279d87969" absoluteBounds="1.75, 2.625, 2, 3.1170068359375">
+      <DataClassMoniker Name="/DataClasses1DataContext/usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7bc9ee59-6200-4772-90f5-d174fa1dcf8f" absoluteBounds="1.7650000000000001, 3.085, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9a1e7ef9-639f-4f68-b79a-6e2fdbe6a4c5" absoluteBounds="5, 2.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/DataClasses1DataContext/evento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f28de8cf-294d-4c51-875c-4299451ce01a" absoluteBounds="5.015, 3.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.75 : 4.11620198567708); (5 : 4.11620198567708)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClasses1DataContext/usuario/usuario_evento" />
+      <nodes>
+        <classShapeMoniker Id="6375e87d-6a0a-4755-ac6e-394279d87969" />
+        <classShapeMoniker Id="9a1e7ef9-639f-4f68-b79a-6e2fdbe6a4c5" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="eventos" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(local);Initial Catalog=eventos;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="eventosConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.usuario" Member="usuario">
+    <Type Name="usuario">
+      <Column Name="id_usuario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="rut" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="usuario" Member="usuario1" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="pass" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="nombres" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="apellidos" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="fecha_nacimiento" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="telefono" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="correo" Type="System.String" DbType="VarChar(55) NOT NULL" CanBeNull="false" />
+      <Column Name="sexo" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="descripcion_perfil" Type="System.String" DbType="VarChar(5000)" CanBeNull="true" />
+      <Column Name="id_imagen" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="usuario_evento" Member="evento" ThisKey="id_usuario" OtherKey="id_usuario" Type="evento" />
+    </Type>
+  </Table>
+  <Table Name="dbo.evento" Member="evento">
+    <Type Name="evento">
+      <Column Name="id_evento" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre_evento" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="id_usuario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fecha_evento" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="direccion_evento" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="edad_minima" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="edad_maxima" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_categ" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_privac" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="descrip_evento" Type="System.String" DbType="VarChar(5000)" CanBeNull="true" />
+      <Association Name="usuario_evento" Member="usuario" ThisKey="id_usuario" OtherKey="id_usuario" Type="usuario" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
