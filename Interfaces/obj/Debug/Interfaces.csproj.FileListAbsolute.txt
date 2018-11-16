@@ -1,0 +1,4 @@
+c:\users\asus\documents\visual studio 2010\Projects\Interfaces\Interfaces\bin\Interfaces.dll
+c:\users\asus\documents\visual studio 2010\Projects\Interfaces\Interfaces\bin\Interfaces.pdb
+c:\users\asus\documents\visual studio 2010\Projects\Interfaces\Interfaces\obj\Debug\Interfaces.dll
+c:\users\asus\documents\visual studio 2010\Projects\Interfaces\Interfaces\obj\Debug\Interfaces.pdb
